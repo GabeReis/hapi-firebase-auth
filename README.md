@@ -1,0 +1,1 @@
+# hapi-firebase-auth
