@@ -36,7 +36,7 @@ yarn add hapi-firebase-auth
 
 In case you don't want to initialize Firebase Admin externally, pass your Firebase credentials using the property `credential` as shown below. This way the plugin will handle all this for you.
 
-```
+```js
 // Load Hapi-Firebase Auth Strategy
 const HapiFirebaseAuth = require('hapi-firebase-auth');
 
@@ -63,7 +63,7 @@ You can get the credentials for your project in your Firebase Console. More deta
 
 If there is already an existing Firebase Admin instance, pass it using the property `instance` as shown below.
 
-```
+```js
 // Load Hapi-Firebase Auth Strategy
 const HapiFirebaseAuth = require('hapi-firebase-auth');
 
@@ -98,7 +98,7 @@ If you are having issues with Firebase Admin SDK, <a href="https://firebase.goog
 
 Add property `auth` with value `firebase` to the `config` object in the routes you want to protect.
 
-```
+```js
 server.route({ 
   method: 'GET', 
   path: '/',
