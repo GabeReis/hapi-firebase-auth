@@ -34,7 +34,7 @@ yarn add hapi-firebase-auth
 
 #### Using a new Firebase Admin instance
 
-In case you don't want to initialize Firebase Admin externally, pass your Firebase credentials using the property `credential` as shown below. This way the plugin will handle all this for you.
+In case you don't want to initialize Firebase Admin externally, pass your Firebase credentials using the property `credential` as shown below. This way the plugin will handle it for you.
 
 ```js
 // Load Hapi-Firebase Auth Strategy
@@ -59,7 +59,7 @@ server.auth.strategy('firebase', 'firebase', {
 You can get the credentials for your project in your Firebase Console. More details <a href="https://firebase.google.com/docs/admin/setup" target="_blank">here</a>.
 
 
-### Using a pre-existing Firebase Admin instance
+#### Using a pre-existing Firebase Admin instance
 
 If there is already an existing Firebase Admin instance, pass it using the property `instance` as shown below.
 
@@ -119,7 +119,7 @@ Send requests to the protected endpoints using the `authorization` header:
 Authorization: Bearer ey3tn03g2no5ig0gimt9gwglkrg0495gj(...)
 ```
 
-* If the provided token IS `VALID`, the endpoint will be accessible as usual.
+* If the provided token is `VALID`, the endpoint will be accessible as usual.
 * If the provided token is `INVALID` or `EXPIRED`, a `401 - Unauthorized` error will be returned. 
 
 ## Error codes
