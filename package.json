@@ -1,6 +1,6 @@
 {
   "name": "hapi-firebase-auth",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Hapi.js auth strategy using Firebase access tokens",
   "main": "lib/index.js",
   "repository": "https://github.com/gabrielreiscom/hapi-firebase-auth",
